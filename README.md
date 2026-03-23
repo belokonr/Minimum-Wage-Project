@@ -43,16 +43,21 @@ For each dimension, the extension estimates interaction models with clustered st
 ```
 ├── README.md
 ├── data/
-│   └── public.dat                          # Original Card & Krueger survey data
+│   ├── 01_Data_Cleaning.ipynb                  # Preliminary data cleaning code
+│   └── raw/
+│       └── public.dat                          # Original Card & Krueger survey data
+│       └── check.sas                           # Original Card & Krueger data cleaning
+│       └── codebook                            # Original Card & Krueger codebook
+│       └── read.me                             # Original Card & Krueger readme
+│       └── survey1.nj                          # Original Card & Krueger survey information
+│       └── survey2.nj                          # Original Card & Krueger survey information
 ├── notebooks/
-│   ├── 02_Replication_Analysis.ipynb       # Replication (Python/Colab)
-│   └── 03_Extension_and_Results.ipynb                 # Heterogeneous treatment effects extension
+│   ├── 02_Replication_Analysis.ipynb           # Replication (Python/Colab)
+│   └── 03_Extension_and_Results.ipynb          # Heterogeneous treatment effects extension
 ├── output/
-│   ├── tables/                             # Replicated tables
-│   └── figures/
-│       └── hte_forest_plot.png             # Forest plot of heterogeneous effects
+│   ├── hte_forest_plot.png                     # Forest plot of heterogeneous effects
 └── docs/
-    └── Card_Krueger_1994.pdf               # Original paper
+    └── Card_Krueger_1994.pdf                   # Original paper
 ```
 
 ## Data
