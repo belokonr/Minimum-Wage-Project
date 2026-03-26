@@ -2,6 +2,59 @@
 
 A replication and extension of Card and Krueger's (1994) landmark study on the employment effects of New Jersey's 1992 minimum wage increase on the fast-food industry.
 
+# **Executive Memo: What Happens to Jobs When the Minimum Wage Goes Up?**
+
+Rashelle Belokon  
+March 2026
+
+## **The Bottom Line**
+
+Raising New Jersey's minimum wage by 19% in 1992 did not reduce employment at fast-food restaurants as previous economic theory dictated, but rather increased it. My replication of a landmark economics study, along with an original extension examining which types of stores were most affected, confirms that the job losses predicted by textbook economic theory did not materialize in this case.
+
+## **What Was Studied**
+
+On April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour. Neighboring Pennsylvania kept its minimum at $4.25. Economists David Card and Alan Krueger surveyed 410 Burger King, KFC, Wendy's, and Roy Rogers restaurants in both states before and after the increase to measure what happened to employment. I replicated their analysis and then extended it to ask: *did the effect differ depending on the type of restaurant?*
+
+## **How The Effect of the Minimum Wage Was Isolated**
+
+The central challenge in policy evaluation is separating cause from coincidence. If employment changed in New Jersey after the wage increase, how do we know it was because of the policy and not because of other confounding factors? Card and Kreuger addressed this by choosing two states to sample data from with very similar baseline characteristics. New Jersey and eastern Pennsylvania share the same regional economy, the same fast-food chains, and the same consumer base. The only thing that changed on April 1, 1992 was the minimum wage in New Jersey. By comparing employment trends at restaurants on both sides of the border, we can isolate the causal effect of the wage increase from everything else that was happening at the time. 
+
+Economists call this a "difference-in-differences" design, but the intuition is simply: same conditions, one treatment, compare the outcomes. A similar example that may be familiar is in any basic science experiment that one would do in school; you have a control group which represents your baseline before applying a change, then you have your experimental group to which you apply a change. Then, you are successfully able to see the isolated impact of that change since all other factors are held constant between your groups.
+
+## **What Was Found: The Extension**
+
+My original extension asked whether the employment effect was the same everywhere, or whether it varied depending on the restaurant's chain, ownership, size, or location within New Jersey. We measured each store's "wage gap" (the percentage raise it needed to comply with the new minimum) and tested whether the relationship between that gap and employment growth differed across store types.
+
+The figure below summarizes the results. Each row shows the estimated employment effect of the minimum wage for a specific subgroup of stores, with a dot representing the best estimate and a horizontal line showing the range of statistical uncertainty (95% confidence interval). If the line crosses zero, we cannot confidently distinguish the effect from no effect. If it falls entirely to the right of zero, the wage increase was associated with employment *gains* for that group with 95% certainty, a common statistical baseline for determining whether we can confidently reject the previous economic intuition.
+
+output/figures/hte_forest_plot.png
+
+*Figure: Estimated effect of the NJ minimum wage on FTE employment by store characteristic. Each point represents the GAP coefficient (the employment change associated with the proportional wage increase needed to reach $5.05) for a specific subgroup, estimated from separate interaction models with clustered standard errors. The dashed vertical line marks zero (no employment effect). Confidence intervals that do not cross zero indicate statistically significant effects. All models control for chain identity and ownership structure.*
+
+**Three takeaways from this figure:**
+
+1. No subgroup shows job losses. Every single estimate is either positive or statistically indistinguishable from zero. The conventional prediction that higher wages lead to fewer jobs finds no support in any slice of the data.
+
+2. Larger stores gained the most. Restaurants that were already above the median size before the policy change experienced the strongest employment growth. This was the single most statistically significant finding in our extension (p \= 0.004), and it makes intuitive sense: bigger stores had more minimum-wage workers and thus more room for the policy to affect hiring.
+
+3. The result is not driven by one region or one chain. The effect is broadly similar across North, Central, and South Jersey, and across franchise and company-owned stores. This rules out the concern that our finding is just an artifact of one booming local economy or one chain's expansion strategy.
+
+## **Implications for Policy and Business**
+
+These findings carry direct implications for stakeholders weighing the costs and benefits of minimum wage increases:
+
+**For policymakers considering minimum wage legislation:** This evidence suggests that moderate minimum wage increases do not automatically destroy jobs in low-wage industries. The fear that a higher wage floor will trigger mass layoffs is not supported by this data. Policymakers should weigh the substantial benefits to workers (higher incomes, reduced turnover) against employment risks that did not materialize in this case. That said, these results apply to a specific case context and care should be taken in interpreting these results in terms of much larger increases or different labor markets.
+
+**For business operators in low-wage industries:** The evidence indicates that restaurants absorbed the higher wage primarily through modest price increases rather than through workforce reductions. Operators facing a minimum wage increase should plan for cost pass-through to consumers and potential adjustments to scheduling and staffing mix, rather than assuming that layoffs are the only viable response. The finding that larger stores benefited most suggests that establishments with scale may be better positioned to absorb wage mandates.
+
+**For future research:** The significant heterogeneity by store size and chain identity suggests that the employment effects of minimum wages are not one-size-fits-all. Future evaluations should examine how firm characteristics mediate the impact of wage policies, rather than focusing solely on average effects.
+
+## **Methodological Note**
+
+This analysis replicates Card and Krueger (1994), published in *The American Economic Review*, using the authors' original public-use dataset. The heterogeneous treatment effects extension, forest plot visualization, and this memo were developed with the assistance of Claude (Anthropic, claude.ai), used as a collaborative coding and writing tool. All analytical decisions and interpretations were reviewed and directed by the project author.
+
+
+
 ## Original Study
 
 **Card, D., & Krueger, A. B. (1994).** Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania. *The American Economic Review*, 84(4), 772–793.
