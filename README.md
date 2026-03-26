@@ -27,7 +27,7 @@ My original extension asked whether the employment effect was the same everywher
 
 The figure below summarizes the results. Each row shows the estimated employment effect of the minimum wage for a specific subgroup of stores, with a dot representing the best estimate and a horizontal line showing the range of statistical uncertainty (95% confidence interval). If the line crosses zero, we cannot confidently distinguish the effect from no effect. If it falls entirely to the right of zero, the wage increase was associated with employment *gains* for that group with 95% certainty, a common statistical baseline for determining whether we can confidently reject the previous economic intuition.
 
-[Plot file](./output/hte_forest_plot.png)
+![Plot file](./output/hte_forest_plot.png)
 
 *Figure: Estimated effect of the NJ minimum wage on FTE employment by store characteristic. Each point represents the GAP coefficient (the employment change associated with the proportional wage increase needed to reach $5.05) for a specific subgroup, estimated from separate interaction models with clustered standard errors. The dashed vertical line marks zero (no employment effect). Confidence intervals that do not cross zero indicate statistically significant effects. All models control for chain identity and ownership structure.*
 
