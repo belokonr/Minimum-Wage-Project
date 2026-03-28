@@ -1,0 +1,7 @@
+Necessary libraries:
+pandas
+numpy
+statsmodels.formula.api
+scipy stats
+matplotlib.pyplot
+matplotlib.patches
